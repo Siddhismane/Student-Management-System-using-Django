@@ -1,0 +1,67 @@
+{%extends "masterpage.html"%}
+{%block title %}
+     Home
+{%endblock title %}
+
+{%block body %}
+    <div class="card bg-dark text-white">
+        <img class="card-img" src="https://img.freepik.com/free-photo/person-working-html-computer_23-2150038848.jpg?size=626&ext=jpg&ga=GA1.1.73218412.1719504174&semt=ais_user" height="450px">
+        <div class="card-img-overlay" >
+        <h4 class="card-title" style="color: black; ">TheKiranAcademy</h4>
+          {%include 'messages.html'%}
+        
+        <div style="width: 50%; background-color:midnightblue;margin: 10px;"><h4 class="card-title" style="color: white; ">Top rated IT Training Classes in Pune</h4>
+        <h3 class="card-text" style="color:white;align-items: flex-end;">Java, Selenium, Python, MERN Stack, .Net Courses </h3><br>
+        </div><br><br>
+        <br><br><br><br>
+        <a href="{% url 'registration'%}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Book demo class</a>
+        <h3 class="card-text" style="color:midnightblue;" >100% Job Placement Support</h3>
+        </div>
+    </div>
+
+    <center style="margin: 25px;"><h2>Most Popular IT Training Courses In Pune</h2></center>
+    <center><h5 style="color: indigo;">Software Industry Offers High-Paying Jobs for the most demanding IT Courses - Java, Selenium, Python, AWS, Azure, Salesforce</h5></center><br> <br>
+
+    <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmNq0f5BL9j0u1HOBQpX1HV8p6qIkZQnBYg&s" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Python Programming Course</h5>
+            <p class="card-text">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected.</p>
+            <b><i><p>3.5 Months Course duration</p></i></b>
+            <p class="card-text">Batch- Python(Online & Classroom)</p>
+            <center><a href="{%url 'python'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn More</a>
+            <a href="{%url 'registration'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Enroll now</a></center>    
+          </div>
+        </div>
+
+        <div class="card" style="height: 90%;">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6lfTSUCqlM-9Kheggd6JH7IibvqM5KiQ2d4MSOfFZ6hYm8CXtHUTCIF-RM_x4WTm9mMc&usqp=CAU" >
+            <div class="card-body">
+              <h5 class="card-title">Java Training Course</h5>
+              <p class="card-text">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.Java was originally developed by James Gosling at Sun Microsystems.</p>
+              <b><i><p>3.5 Months Course duration</p></i></b>
+              <p class="card-text">Batch- Python(Online & Classroom)</p>
+              <center><a href="{%url 'java'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn More</a>
+              <a href="{%url 'registration'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Enroll now</a></center>    
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8X4KxkMR5ejXc8BkpZdOpDgNeEfSld30pKo3dtbYBVf7QWjBwHhfGkRi9S7q6lcdK2Q&usqp=CAU">
+            <div class="card-body">
+              <h5 class="card-title">AWS Certification Course</h5>
+              <p class="card-text">Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, pay-as-you-go basis. Clients will often use this in combination with autoscaling. </p>
+              <b><i><p>3.5 Months Course duration</p></i></b>
+              <p class="card-text">Batch- Python(Online & Classroom)</p>
+              <center><a href="{%url 'aws'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn More</a>
+              <a href="{%url 'registration'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Enroll now</a></center>    
+            </div>
+          </div>
+
+    
+    
+      </div>
+
+{%endblock body %}
+
